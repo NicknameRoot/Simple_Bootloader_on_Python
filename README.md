@@ -1,7 +1,5 @@
 # Simple_Bootloader_on_Python
 
-you can see it on a separate website using this [Link](https://nicknameroot.github.io/Simple_Bootloader_on_Python/)
-
 ## Version Alpha_1.0.0.1
 
 In this version, the basic code for the loading screen was written.
