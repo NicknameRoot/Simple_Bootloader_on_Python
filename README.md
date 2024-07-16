@@ -1,14 +1,5 @@
 # Simple_Bootloader_on_Python
 
-## Version Alpha_1.0.0.1
-
-In this version, the basic code for the loading screen was written.
-<img src="https://github.com/NicknameRoot/Simple_Python_Bootloader/blob/gh-pages/version_aplha_1.0.0.1.gif?raw=true">
-
-One third-party library was used in the form of [Link](https://github.com/Textualize/rich), to create a visually pleasing console interface.
-
-In the internal structure of the code, it is planned to link to the configuration file and improve the functionality of the code.
-
 ## Version Alpha_1.0.1.5
 The main code and internal functions were written in this version
 
@@ -41,3 +32,13 @@ Now let's talk about the fact that this loader was written exclusively to launch
 To demonstrate how it works, I added a `test.c` file to the configuration file that is not supported for launching and removed other files from the list, after which the loader performed its job correctly.
 
 <img src=https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Demo_Files/Error_Demo.gif>
+
+## Version Alpha_1.0.0.1
+
+In this version, the basic code for the loading screen was written.
+<img src="https://github.com/NicknameRoot/Simple_Python_Bootloader/blob/gh-pages/version_aplha_1.0.0.1.gif?raw=true">
+
+One third-party library was used in the form of [Link](https://github.com/Textualize/rich), to create a visually pleasing console interface.
+
+In the internal structure of the code, it is planned to link to the configuration file and improve the functionality of the code.
+
