@@ -1,10 +1,32 @@
 # Simple_Bootloader_on_Python
 
+## Version Alpha_1.0.1.7
+
+In this version, the part of the code responsible for recording logs of events that occurred during the code operation was written [Bootloader.py](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Bootloader.py)
+Now, if there is an error loading any script, it will be necessarily recorded in the log (also, absolutely all loader events are written to the log, regardless of the success of its operation)
+
+<img src=https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.7/Demo_Files/Logs.gif>
+
+and it will be located in the same directory as the main code [Bootloader.py](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Bootloader.py ) in the main folder `Logs` there will be a subfolder automatically named by the current date in the format `%d-%m-%Y`, and in this folder there will be the log file `debug.log` itself.<br>
+
+**[A small technical correction that was not included at the time of filming, but was already fixed at the code level, namely, the date format was initially set to American `%m-%d-%Y` where the month goes before the number (which got to the shooting), then the format was corrected to European where we go to the usual location first the number then month and year `%d-%m-%Y'.]**
+
+<img src=https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.7/Demo_Files/File.gif>
+
+The internal contents of the log file `debug.log` are arranged so that each line is written in it at the very beginning using the format <br>
+`%d-%m-%Y%H:%M:%S` fixing the date with the time, after these mandatory data, all actions of the loader are already performed, including the launch of the loader itself, the launch status scripts from the configuration file [Config.cfg](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Config.cfg) well, there are also errors when running scripts.
+The contents of the log file after my tests (to demonstrate the operation of the logging script)
+```log
+[22-08-2024 20:13:21] Bootloader started.
+[22-08-2024 20:13:26] Loading new-bot.py
+[22-08-2024 20:13:26] new-bot.py loaded successfully
+[22-08-2024 20:13:26] test.c failed to load: Not a Python script.
+```
+
 ## Version Alpha_1.0.1.5
 The main code and internal functions were written in this version
 
-This project was developed for Windows and with the expectation of its use under Windows, for which a simple script was created [Start.bat](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Start.bat) was written to start the bootloader [Bootloader.py
-](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Bootloader.py).
+This project was developed for Windows and with the expectation of its use under Windows, for which a simple script was created [Start.bat](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Start.bat) was written to start the bootloader [Bootloader.py](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Bootloader.py).
 The main loader console window is launched and subsequent loaded scripts are opened in separate console windows.
 
 Now, when launched, the bootloader script accesses the configuration file [Config.cfg](https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Alpha_1.0.1.5/Config.cfg):
