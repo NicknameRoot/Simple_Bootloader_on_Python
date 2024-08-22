@@ -14,7 +14,7 @@ bootloader_ver = "Alpha 1.0.1.7"
 # Настройка логирования
 current_dir = os.path.dirname(os.path.abspath(__file__))  # Директория с .py файлом загрузчика
 log_folder = os.path.join(current_dir, "Logs")
-current_date = datetime.now().strftime("%m-%d-%Y")
+current_date = datetime.now().strftime("%d-%m-%Y")
 log_dir = os.path.join(log_folder, current_date)
 
 # Проверяем и создаем папку для логов, если она не существует
@@ -28,7 +28,7 @@ log_file = os.path.join(log_dir, "debug.log")
 logging.basicConfig(filename=log_file, 
                     level=logging.DEBUG, 
                     format='[%(asctime)s] %(message)s', 
-                    datefmt='%m-%d-%Y %H:%M:%S')
+                    datefmt='%d-%m-%Y %H:%M:%S')
 
 # Логирование старта загрузчика
 logging.info("Bootloader started.")
