@@ -1,0 +1,4 @@
+[01-08-2025 21:43:50] Bootloader started.
+[01-08-2025 21:43:55] Loading new-bot.py
+[01-08-2025 21:43:55] new-bot.py loaded successfully
+[01-08-2025 21:43:55] test.c failed to load: Not a Python script.
