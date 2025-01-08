@@ -4,8 +4,7 @@
 Minor changes. The start screen has been redesigned (the visual support for the user has been reconfigured), now it shows our logo as an asci image and now after the version the name of the author (me) and our company is displayed. Also, minor changes were made to the `start.bat` code to fix the console output.
 This can be considered a minor update, because only the functionality of correctly displaying the logo, the author and our company was added.
 
-[ I have no idea why this time the gif file is displayed so slowly, although it converted correctly, but it became twice as slow as it was in the recording ]
-<img src=https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Aplha%201.0.1.8/Demo_Files/console.gif>
+<img src=https://github.com/NicknameRoot/Simple_Bootloader_on_Python/blob/gh-pages/Aplha%201.0.1.8/Demo_Files/Console.gif>
 
 ## Version Alpha_1.0.1.7
 
